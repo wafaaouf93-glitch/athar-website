@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ATHAR | BORN ORIGINAL</title>
+
+<style>
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background:
+    radial-gradient(ellipse at 20% 20%, #555 0%, transparent 45%),
+    radial-gradient(ellipse at 80% 60%, #333 0%, transparent 50%),
+    linear-gradient(135deg, #050505, #777, #111, #444);
+  background-attachment: fixed;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 7%;
+  border-bottom: 1px solid #333;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 900;
+  letter-spacing: 4px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 25px;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.hero {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+}
+
+.hero h1 {
+  font-size: clamp(65px, 14vw, 150px);
+  font-weight: 900;
+  letter-spacing: 12px;
+}
+
+.hero p {
+  font-size: 15px;
+  letter-spacing: 7px;
+  margin-top: 15px;
+  color: #aaa;
+}
+
+.hero a {
+  margin-top: 45px;
+  padding: 16px 40px;
+  background: white;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.product {
+  padding: 20px;
+  background: #141414;
+  border: 1px solid #292929;
+  border-radius: 4px;
+  transition: all 0.35s ease;
+}
+
+.product:hover {
+  transform: translateY(-6px);
+  border-color: #777;
+  background: #191919;
+}
+
+.product img {
+  width: 100%;
+  height: 380px;
+  object-fit: contain;
+  background: #111;
+  padding: 10px;
+  transition: transform 0.4s ease;
+}
+
+.product:hover img {
+  transform: scale(1.04);
+}
+
+.product h3 {
+  font-size: 14px;
+  margin-top: 15px;
+  letter-spacing: 1px;
+}
+
+.product p {
+  color: #aaa;
+  margin-top: 10px;
+}
+
+.description {
+  color: #aaa;
+  font-size: 12px;
+  line-height: 1.6;
+  margin: 12px 0;
+  letter-spacing: 0.5px;
+}
+
+.product select {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  background: #111;
+  color: white;
+  border: 1px solid #444;
+  font-size: 13px;
+}
+
+.add-btn {
+  width: 100%;
+  padding: 14px;
+  margin-top: 15px;
+  background: white;
+  color: black;
+  border: none;
+  font-weight: bold;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  background: #ccc;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  border-top: 1px solid #333;
+  color: #777;
+  font-size: 11px;
+  letter-spacing: 3px;
+}
+
+@media (max-width: 768px) {
+  .products {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .product {
+    padding: 10px;
+    min-width: 0;
+  }
+
+  .product img {
+    height: 200px;
+    object-fit: contain;
+  }
+
+  .product h3 {
+    font-size: 11px;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background:
+    radial-gradient(ellipse at 20% 20%, #555 0%, transparent 45%),
+    radial-gradient(ellipse at 80% 60%, #333 0%, transparent 50%),
+    linear-gradient(135deg, #050505, #777, #111, #444);
+  background-attachment: fixed;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 7%;
+  border-bottom: 1px solid #333;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 900;
+  letter-spacing: 4px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 25px;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.hero {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+}
+
+.hero h1 {
+  font-size: clamp(65px, 14vw, 150px);
+  font-weight: 900;
+  letter-spacing: 12px;
+}
+
+.hero p {
+  font-size: 15px;
+  letter-spacing: 7px;
+  margin-top: 15px;
+  color: #aaa;
+}
+
+.hero a {
+  margin-top: 45px;
+  padding: 16px 40px;
+  background: white;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.product {
+  padding: 20px;
+  background: #141414;
+  border: 1px solid #292929;
+  border-radius: 4px;
+  transition: all 0.35s ease;
+}
+
+.product:hover {
+  transform: translateY(-6px);
+  border-color: #777;
+  background: #191919;
+}
+
+.product img {
+  width: 100%;
+  height: 380px;
+  object-fit: contain;
+  background: #111;
+  padding: 10px;
+  transition: transform 0.4s ease;
+}
+
+.product:hover img {
+  transform: scale(1.04);
+}
+
+.product h3 {
+  font-size: 14px;
+  margin-top: 15px;
+  letter-spacing: 1px;
+}
+
+.product p {
+  color: #aaa;
+  margin-top: 10px;
+}
+
+.description {
+  color: #aaa;
+  font-size: 12px;
+  line-height: 1.6;
+  margin: 12px 0;
+  letter-spacing: 0.5px;
+}
+
+.product select {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  background: #111;
+  color: white;
+  border: 1px solid #444;
+  font-size: 13px;
+}
+
+.add-btn {
+  width: 100%;
+  padding: 14px;
+  margin-top: 15px;
+  background: white;
+  color: black;
+  border: none;
+  font-weight: bold;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  background: #ccc;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  border-top: 1px solid #333;
+  color: #777;
+  font-size: 11px;
+  letter-spacing: 3px;
+}
+
+@media (max-width: 768px) {
+  .products {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .product {
+    padding: 10px;
+    min-width: 0;
+  }
+
+  .product img {
+    height: 200px;
+    object-fit: contain;
+  }
+
+  .product h3 {
+    font-size: 11px;
+  }
+}@media (max-width: 768px) {
+
+  header {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 10px;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  nav a {
+    margin: 0;
+    font-size: 10px;
+  }
+
+  .product img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    height: auto;
+    object-fit: contain;
+  }
+}
+/* ATHAR NAVIGATION */
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+  position: relative;
+}
+
+.main-nav > a {
+  margin: 0;
+  white-space: nowrap;
+}
+
+.category-dropdown {
+  position: relative;
+  margin-right: 5px;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 27px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.category-menu {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 230px;
+  padding: 18px;
+  background: #141414;
+  border: 1px solid #444;
+  z-index: 100;
+}
+
+.category-menu.active {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.category-menu a {
+  margin: 0;
+  font-size: 12px;
+}
+
+.category-menu input {
+  width: 100%;
+  padding: 12px;
+  background: #222;
+  border: 1px solid #555;
+  color: white;
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  .main-nav {
+    width: 100%;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: nowrap;
+  }
+
+  .main-nav > a {
+    font-size: 9px;
+    letter-spacing: 1px;
+  }
+
+  .menu-toggle {
+    font-size: 23px;
+  }
+}
+/* SAME SIZE FOR ALL PRODUCT IMAGES AND VIDEOS */
+.product img,
+.product video {
+    width: 100%;
+    height: 380px;
+    object-fit: contain;
+    display: block;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">ATHAR.</div>
+  
+<nav class="main-nav">
+
+  <div class="category-dropdown">
+    <button class="menu-toggle" onclick="toggleMenu()" aria-label="Open categories">
+      ☰
+    </button>
+
+    <div class="category-menu" id="category-menu">
+      <input type="search" id="product-search" placeholder="Search products..." oninput="searchProducts(this.value)">
+
+      <a href="#hoodies" onclick="toggleMenu()">HOODIES</a>
+      <a href="#zip-hoodies" onclick="toggleMenu()">ZIP HOODIES</a>
+      <a href="#pants" onclick="toggleMenu()">JOGGING PANTS</a>
+      <a href="#jogger-sets" onclick="toggleMenu()">JOGGER SETS</a>
+      <a href="#zip-sets" onclick="toggleMenu()">ZIP SETS</a>
+    </div>
+  </div>
+
+  <a href="#">HOME</a>
+  <a href="#shop">SHOP</a>
+  <a href="#about">ABOUT</a>
+  <a href="#bag" id="bag-count">BAG (0)</a>
+
+</nav>
+
+</header>
+
+<section class="hero">
+  <h1>ATHAR</h1>
+  <p>BORN ORIGINAL</p>
+<a href="#shop">DISCOVER COLLECTION</a></section>
+
+<section id="shop" style="padding:70px 7%;">
+  <h2 style="text-align:center;font-size:38px;letter-spacing:5px;margin-bottom:15px;">
+    THE COLLECTION
+  </h2>
+
+  <p style="text-align:center;color:#888;margin-bottom:50px;">
+    ATHAR — BORN ORIGINAL
+  </p><div class="products">
+
+ 
+
+  <div class="product">
+    <img src="welcomeathar_fichiers/photo_6019259536088174220_y.jpg" alt="ATHAR OVERSIZED HOODIE BLACK" style="width:100%;">
+    <h3>ATHAR OVERSIZED HOODIE — BLACK</h3><select id="black-size">
+  <option value="" selected="selected">Select size</option>
+  <option>S</option>
+  <option>M</option>
+  <option>L</option>
+  <option>XL</option>
+</select>
+<p>2950 DA</p>
+<button class="add-btn" onclick="addProduct('ATHAR OVERSIZED HOODIE — BLACK', 2950, 'black-size')">  ADD TO BAG
+</button>
+  </div>
+
+  <div class="product">
+<img src="welcomeathar_fichiers/photo_6019259536088174201_y.jpg" alt="ATHAR OVERSIZED HOODIE GREY" style="width:100%;">    <h3>ATHAR OVERSIZED HOODIE — GREY</h3><select id="grey-size">
+  <option value="" selected="selected">Select size</option>
+  <option>S</option>
+  <option>M</option>
+  <option>L</option>
+  <option>XL</option>
+</select>
+<p>2950 DA</p>
+<button class="add-btn" onclick="addProduct('ATHAR OVERSIZED HOODIE — GREY', 2950, 'grey-size')">  ADD TO BAG
+</button>
+  </div>
+
+</div>
+
+<h2 id="hoodies" style="text-align:center;margin-top:70px;">
+  MORE HOODIES
+</h2>
+<div class="products">
+
+  <div class="product">
+    <img src="welcomeathar_fichiers/photo_6019259536088174199_y.jpg" alt="ATHAR NAVY BLUE HOODIE" style="width:100%;">
+    <h3>ATHAR NAVY BLUE HOODIE</h3>
+    <select id="navy-size">
+      <option value="" selected="selected">Select size</option>
+      <option>S</option><option>M</option>
+      <option>L</option><option>XL</option>
+    </select>
+    <p>2900 DA</p>
+    <button class="add-btn" onclick="addProduct('ATHAR NAVY BLUE HOODIE', 2900, 'navy-size')">ADD TO BAG</button>
+  </div>
+
+  <div class="product">
+    <img src="welcomeathar_fichiers/photo_6019259536088174203_y.jpg" alt="ATHAR WHITE HOODIE" style="width:100%;">
+    <h3>ATHAR WHITE HOODIE</h3>
+    <select id="white-size">
+      <option value="" selected="selected">Select size</option>
+      <option>S</option><option>M</option>
+      <option>L</option><option>XL</option>
+    </select>
+    <p>2900 DA</p>
+    <button class="add-btn" onclick="addProduct('ATHAR WHITE HOODIE', 2900, 'white-size')">ADD TO BAG</button>
+  </div>
+
+  <div class="product">
+    <img src="welcomeathar_fichiers/photo_6019259536088174200_y.jpg" alt="ATHAR PINK HOODIE" style="width:100%;">
+    <h3>ATHAR PINK HOODIE</h3>
+    <select id="pink-size">
+      <option value="" selected="selected">Select size</option>
+      <option>S</option><option>M</option>
+      <option>L</option><option>XL</option>
+    </select>
+    <p>2900 DA</p>
+    <button class="add-btn" onclick="addProduct('ATHAR PINK HOODIE', 2900, 'pink-size')">ADD TO BAG</button>
+  </div>
+
+  <div class="product">
+    <img src="welcomeathar_fichiers/photo_6019259536088174202_y.jpg" alt="ATHAR BROWN HOODIE" style="width:100%;">
+    <h3>ATHAR BROWN HOODIE</h3>
+    <select id="brown-size">
+      <option value="" selected="selected">Select size</option>
+      <option>S</option><option>M</option>
+      <option>L</option><option>XL</option>
+    </select>
+    <p>2900 DA</p>
+    <button class="add-btn" onclick="addProduct('ATHAR BROWN HOODIE', 2900, 'brown-size')">ADD TO BAG</button>
+  </div>
+
+  <div class="product">
+    <img src="welcomeathar_fichiers/photo_6019259536088174198_y.jpg" alt="ATHAR GREEN HOODIE" style="width:100%;">
+    <h3>ATHAR GREEN HOODIE</h3>
+    <select id="green-size">
+      <option value="" selected="selected">Select size</option>
+      <option>S</option><option>M</option>
+      <option>L</option><option>XL</option>
+    </select>
+    <p>2900 DA</p>
+    <button class="add-btn" onclick="addProduct('ATHAR GREEN HOODIE', 2900, 'green-size')">ADD TO BAG</button>
+  </div>
+
+
+</div>
+
+<h2 style="text-align:center;margin-top:70px;letter-spacing:4px;">
+  BACK ARTWORK DESIGN
+</h2>
+
+<div class="products">
+
+  <div class="product">
+<video autoplay muted loop playsinline preload="metadata"
+       style="width:100%; display:block; object-fit:contain;">
+<source src="welcomeathar_fichiers/IMG_2940.mp4" type="video/mp4"></video>    <h3>ATHAR BACK ARTWORK — BLACK</h3>
+    <select id="art-black-size">
+      <option value="" selected="selected">Select size</option>
+      <option>S</option><option>M</option>
+      <option>L</option><option>XL</option>
+    </select>
+    <p>3550 DA</p>
+    <button class="add-btn" onclick="addProduct('ATHAR BACK ARTWORK — BLACK', 3550, 'art-black-size')">ADD TO BAG</button>
+  </div>
+
+ <div class="product">
+    <video autoplay muted loop playsinline preload="metadata"
+           style="width:100%; display:block; object-fit:contain;">
+      <source src="welcomeathar_fichiers/IMG_2938.mp4" type="video/mp4">
+    </video>
+    <h3>ATHAR BACK ARTWORK — WHITE</h3>
+    <select id="art-white-size">
+      <option value="" selected="selected">Select size</option>
+      <option>S</option><option>M</option>
+      <option>L</option><option>XL</option>
+    </select>
+    <p>3550 DA</p>
+    <button class="add-btn" onclick="addProduct('ATHAR BACK ARTWORK — WHITE', 3550, 'art-white-size')">ADD TO BAG</button>
+  </div>
+
+  <div class="product">
+    <video autoplay muted loop playsinline preload="metadata"
+           style="width:100%; display:block; object-fit:contain;">
+      <source src="welcomeathar_fichiers/IMG_2831.mp4" type="video/mp4">
+    </video>
+    <h3>ATHAR BACK ARTWORK — GREEN</h3>
+    <select id="art-green-size">
+      <option value="" selected="selected">Select size</option>
+      <option>S</option><option>M</option>
+      <option>L</option><option>XL</option>
+    </select>
+    <p>3550 DA</p>
+    <button class="add-btn" onclick="addProduct('ATHAR BACK ARTWORK — GREEN', 3550, 'art-green-size')">ADD TO BAG</button>
+  </div>
+
+  <div class="product"><video autoplay muted loop playsinline preload="metadata"
+       style="width:100%; display:block; object-fit:contain;">
+<source src="welcomeathar_fichiers/IMG_2837 (1).mp4" type="video/mp4"></video>
+    <h3>ATHAR BACK ARTWORK — NAVY BLUE</h3>
+    <select id="art-navy-size">
+      <option value="" selected="selected">Select size</option>
+      <option>S</option><option>M</option>
+      <option>L</option><option>XL</option>
+    </select>
+    <p>3550 DA</p>
+    <button class="add-btn" onclick="addProduct('ATHAR BACK ARTWORK — NAVY BLUE', 3550, 'art-navy-size')">ADD TO BAG</button>
+  </div>
+
+  <div class="product">
+    <video autoplay muted loop playsinline preload="metadata"
+           style="width:100%; display:block; object-fit:contain;">
+      <source src="welcomeathar_fichiers/IMG_2839.mp4" type="video/mp4">
+    </video>
+    <h3>ATHAR BACK ARTWORK — GREY</h3>
+    <select id="art-grey-size">
+      <option value="" selected="selected">Select size</option>
+      <option>S</option><option>M</option>
+      <option>L</option><option>XL</option>
+    </select>
+    <p>3550 DA</p>
+    <button class="add-btn" onclick="addProduct('ATHAR BACK ARTWORK — GREY', 3550, 'art-grey-size')">ADD TO BAG</button>
+  </div>
+
+  <div class="product">
+    <video autoplay muted loop playsinline preload="metadata"
+           style="width:100%; display:block; object-fit:contain;">
+      <source src="welcomeathar_fichiers/IMG_2939.mp4" type="video/mp4">
+    </video>
+    <h3>ATHAR BACK ARTWORK — PINK</h3>
+    <select id="art-pink-size">
+      <option value="" selected="selected">Select size</option>
+      <option>S</option><option>M</option>
+      <option>L</option><option>XL</option>
+    </select>
+    <p>3550 DA</p>
+    <button class="add-btn" onclick="addProduct('ATHAR BACK ARTWORK — PINK', 3550, 'art-pink-size')">ADD TO BAG</button>
+  </div>
+
+  <div class="product">
+    <video autoplay muted loop playsinline preload="metadata"
+           style="width:100%; display:block; object-fit:contain;">
+      <source src="welcomeathar_fichiers/IMG_2836.mp4" type="video/mp4">
+    </video>
+    <h3>ATHAR BACK ARTWORK — BROWN</h3>
+    <select id="art-brown-size">
+      <option value="" selected="selected">Select size</option>
+      <option>S</option><option>M</option>
+      <option>L</option><option>XL</option>
+    </select>
+    <p>3550 DA</p>
+    <button class="add-btn" onclick="addProduct('ATHAR BACK ARTWORK — BROWN', 3550, 'art-brown-size')">ADD TO BAG</button>
+  </div>
+
+</div>
+
+<h2 id="zip-hoodies" style="text-align:center;margin-top:70px;">
+  ZIP HOODIES
+</h2>
+
+<div class="products">
+
+  <div class="product">
+    <img src="welcomeathar_fichiers/photo_6019259536088174195_y.jpg" alt="ATHAR ZIP HOODIE GREY" style="width:100%;">
+    <h3>ATHAR ZIP HOODIE — GREY</h3>
+    <select id="zip-grey-size">
+      <option value="" selected="selected">Select size</option>
+      <option>S</option><option>M</option>
+      <option>L</option><option>XL</option>
+    </select>
+    <p>2950 DA</p>
+    <button class="add-btn" onclick="addProduct('ATHAR ZIP HOODIE — GREY', 2950, 'zip-grey-size')">ADD TO BAG</button>
+  </div>
+
+  <div class="product">
+<img src="welcomeathar_fichiers/photo_6019259536088174196_y.jpg" alt="ATHAR ZIP HOODIE BLACK" style="width:100%;">    <select id="zip-black-size">
+      <option value="" selected="selected">Select size</option>
+      <option>S</option><option>M</option>
+      <option>L</option><option>XL</option>
+    </select>
+    <p>2950 DA</p>
+    <button class="add-btn" onclick="addProduct('ATHAR ZIP HOODIE — BLACK', 2950, 'zip-black-size')">ADD TO BAG</button>
+  </div>
+
+</div>
+
+<h2 id="pants" style="text-align:center;margin-top:70px;">
+  JOGGING PANTS
+</h2>
+
+<div class="products">
+
+  <div class="product">
+    <img src="welcomeathar_fichiers/photo_6019259536088174192_y.jpg" alt="ATHAR JOGGING PANTS GREY" style="width:100%;">
+    <h3>ATHAR JOGGING PANTS — GREY</h3>
+    <select id="pants-grey-size">
+      <option value="" selected="selected">Select size</option>
+      <option>S</option><option>M</option>
+      <option>L</option><option>XL</option>
+    </select>
+    <p>2500 DA</p>
+    <button class="add-btn" onclick="addProduct('ATHAR JOGGING PANTS — GREY', 2500, 'pants-grey-size')">ADD TO BAG</button>
+  </div>
+
+  <div class="product">
+    <img src="welcomeathar_fichiers/photo_6019259536088174193_y.jpg" alt="ATHAR JOGGING PANTS BLACK" style="width:100%;">
+    <h3>ATHAR JOGGING PANTS — BLACK</h3>
+    <select id="pants-black-size">
+      <option value="" selected="selected">Select size</option>
+      <option>S</option><option>M</option>
+      <option>L</option><option>XL</option>
+    </select>
+    <p>2500 DA</p>
+    <button class="add-btn" onclick="addProduct('ATHAR JOGGING PANTS — BLACK', 2500, 'pants-black-size')">ADD TO BAG</button>
+  </div>
+
+</div>
+<h2 id="jogger-sets" style="text-align:center;margin-top:70px;">
+  JOGGER SETS
+</h2>
+
+<div class="products">
+
+ 
+
+  <div class="product">
+<img src="welcomeathar_fichiers/photo_6019259536088174190_y.jpg" alt="ATHAR JOGGER SET BLACK" style="width:100%;">    <h3>ATHAR JOGGER SET BLACK</h3>
+    <select id="set-black-size">
+      <option value="" selected="selected">Select size</option>
+      <option>S</option><option>M</option>
+      <option>L</option><option>XL</option>
+    </select>
+    <p>5000 DA</p>
+    <button class="add-btn" onclick="addProduct('ATHAR JOGGER SET — BLACK', 5000, 'set-black-size')">ADD TO BAG</button>
+  </div>
+
+</div>
+<h2 id="zip-sets" style="text-align:center;margin-top:70px;">
+  ZIP HOODIE + JOGGING SETS
+</h2>
+
+<div class="products">
+
+  <div class="product">
+    <img src="welcomeathar_fichiers/photo_6019259536088174191_y.jpg" alt="ATHAR ZIP SET GREY" style="width:100%;">
+    <h3>ATHAR ZIP SET — GREY</h3>
+    <select id="zipset-grey-size">
+      <option value="" selected="selected">Select size</option>
+      <option>S</option><option>M</option>
+      <option>L</option><option>XL</option>
+    </select>
+    <p>5500 DA</p>
+    <button class="add-btn" onclick="addProduct('ATHAR ZIP SET — GREY', 5500, 'zipset-grey-size')">ADD TO BAG</button>
+  </div>
+
+  <div class="product">
+    <img src="welcomeathar_fichiers/photo_6019259536088174189_y.jpg" alt="ATHAR ZIP SET BLACK" style="width:100%;">
+    <h3>ATHAR ZIP SET — BLACK</h3>
+    <select id="zipset-black-size">
+      <option value="" selected="selected">Select size</option>
+      <option>S</option><option>M</option>
+      <option>L</option><option>XL</option>
+    </select>
+    <p>5500 DA</p>
+    <button class="add-btn" onclick="addProduct('ATHAR ZIP SET — BLACK', 5500, 'zipset-black-size')">ADD TO BAG</button>
+  </div>
+
+</div></section>
+<section style="text-align:center;padding:45px 7%;background:#111;">
+  <a href="https://www.instagram.com/el.atherr/" target="_blank" style="display:inline-block;background:white;color:black;
+     padding:20px 45px;font-size:20px;font-weight:bold;
+     letter-spacing:2px;text-decoration:none;border-radius:4px;">
+    ORDER NOW ON INSTAGRAM
+  </a>
+</section>
+<section id="about" style="
+  padding:100px 7%;
+  text-align:center;
+  background:#111;
+  border-top:1px solid #333;
+  border-bottom:1px solid #333;
+">
+
+  <p style="letter-spacing:6px;color:#888;font-size:11px;">
+    OUR IDENTITY
+  </p>
+
+  <h2 style="
+    font-size:42px;
+    letter-spacing:8px;
+    margin:20px 0;
+  ">
+    ATHAR
+  </h2>
+
+  <p style="
+    font-size:13px;
+    letter-spacing:5px;
+    color:#aaa;
+  ">
+    BORN ORIGINAL.
+  </p>
+
+  <div style="
+    width:40px;
+    height:1px;
+    background:#fff;
+    margin:35px auto;
+  "></div>
+
+  <p style="
+    max-width:550px;
+    margin:auto;
+    color:#bbb;
+    line-height:2;
+    font-size:14px;
+  ">
+    More than clothing. ATHAR is a statement of originality,
+    confidence and identity. Created for those who choose
+    to stand out and stay true to themselves.
+  </p>
+
+</section>
+<footer>
+  ATHAR © 2026 — BORN ORIGINAL
+<section id="bag" style="padding:60px 7%; border-top:1px solid #333;">
+  <h2 style="text-align:center;letter-spacing:4px;">YOUR BAG</h2>
+  <div id="bag-items" style="margin-top:30px;"></div>
+  <h3 id="bag-total" style="text-align:center;margin-top:25px;">TOTAL: 0 DA</h3>
+<button onclick="checkout()" class="add-btn" style="display:block;margin:30px auto;">
+  PROCEED TO CHECKOUT
+</button>
+
+<form id="checkout-form" name="athar-orders" method="POST" data-netlify="true" style="display:none;max-width:500px;margin:20px auto;text-align:left;">
+  <input type="hidden" name="form-name" value="athar-orders">
+
+  <h2 style="text-align:center;letter-spacing:3px;">ORDER DETAILS</h2>
+
+  <input name="full-name" id="customer-name" placeholder="Full Name" required="">
+
+  <input name="phone" id="customer-phone" type="tel" placeholder="Phone Number" required="">
+
+  <input name="wilaya" id="customer-wilaya" placeholder="Wilaya" required="">
+
+  <input name="address" id="customer-address" placeholder="Delivery Address" required="">
+
+  <select name="delivery-method" id="delivery-method" required="">
+    <option value="" selected="selected">Choose Delivery Method</option>
+    <option value="Home Delivery">Home Delivery</option>
+    <option value="Office Delivery">Delivery Office</option>
+  </select>
+
+  <input type="hidden" name="order-items" id="order-items">
+  <input type="hidden" name="order-total" id="order-total">
+
+  <button class="add-btn" type="button" onclick="confirmOrder()" style="width:100%;margin-top:20px;">
+   </button><button class="add-btn" type="button" onclick="confirmOrder()" style="width:100%;padding:22px;font-size:20px;font-weight:bold;background:white;color:black;border:none;letter-spacing:2px;margin-top:25px;">
+  ORDER NOW ON INSTAGRAM
+</button>
+  
+</form>
+
+
+</section>
+</footer>
+<script>
+let bag = [];
+
+
+
+function showBag() {
+  let items = document.getElementById("bag-items");
+  let total = 0;
+
+  items.innerHTML = "";
+
+  bag.forEach(function(product) {
+    total += product.price;
+items.innerHTML += `
+  <p>
+    ${product.name} — Size: ${product.size} — ${product.price} DA
+    <button onclick="removeFromBag(${bag.indexOf(product)})">REMOVE</button>
+  </p>
+`;  });
+
+  document.getElementById("bag-total").textContent =
+    "TOTAL: " + total + " DA";
+}function addProduct(name, price, sizeId) {
+  let selectedSize = document.getElementById(sizeId).value;
+
+  if (!selectedSize) {
+    alert("Please select a size!");
+    return;
+  }
+
+  bag.push({
+    name: name,
+    price: price,
+    size: selectedSize
+  });
+
+  document.getElementById("bag-count").textContent =
+    "BAG (" + bag.length + ")";
+
+  showBag();
+}
+function removeFromBag(index) {
+  bag.splice(index, 1);
+
+  document.getElementById("bag-count").textContent =
+    "BAG (" + bag.length + ")";
+
+  showBag();
+}function toggleMenu() {
+  document.getElementById("category-menu").classList.toggle("active");
+}
+
+function searchProducts(value) {
+  const search = value.toLowerCase();
+
+  document.querySelectorAll(".product").forEach(product => {
+    const name = product.textContent.toLowerCase();
+
+    product.style.display = name.includes(search) ? "" : "none";
+  });
+}
+function checkout() {
+  if (bag.length === 0) {
+    alert("Your bag is empty!");
+    return;
+  }
+
+  document.getElementById("checkout-form").style.display = "block";
+}
+
+
+function confirmOrder() {
+  const name = document.getElementById("customer-name").value.trim();
+  const phone = document.getElementById("customer-phone").value.trim();
+  const wilaya = document.getElementById("customer-wilaya").value.trim();
+  const address = document.getElementById("customer-address").value.trim();
+  const delivery = document.getElementById("delivery-method").value;
+
+  if (!name || !phone || !wilaya || !address || !delivery) {
+    alert("Please complete all your details!");
+    return;
+  }
+
+  if (bag.length === 0) {
+    alert("Your bag is empty!");
+    return;
+  }
+
+  const order = bag.map(item =>
+    `${item.name} / Size: ${item.size} / ${item.price} DA`
+  ).join("\n");
+
+  const total = bag.reduce((sum, item) => sum + item.price, 0);
+
+  document.getElementById("order-items").value = order;
+  document.getElementById("order-total").value = total + " DA";
+
+  const form = document.getElementById("checkout-form");
+navigator.clipboard.writeText(order);
+window.open("https://www.instagram.com/el.atherr/", "_blank");
+}
+
+
+function copyOrder() {
+  const message = document.getElementById("order-message");
+  message.select();
+  document.execCommand("copy");
+  alert("Order copied! Now send it to ATHAR on Instagram DM.");
+}
+
+</script>
+
+</body></html>
